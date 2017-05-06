@@ -1,0 +1,66 @@
+html {
+  background: url(../img/blog-fondo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+  background: rgba(0, 0, 0, 0);
+}
+
+.bodyclass{
+  background: rgba(105, 24, 24, 0.77);
+}
+
+.vertical-divisor{
+  border-left: 1px solid #cacaca;
+}
+
+.menu li{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.search-button{
+  background: red !important;
+}
+
+.lateral-bar{
+  /*background: rgba(255, 255, 255, 0.5) !important;*/
+  /*width: 90%;*/
+  /*border-radius: 5px;*/
+}
+.historial-list{
+  list-style: none;
+}
+
+.contents{
+  background-color: black;
+  color: white;
+  /*background-color: white;*/
+}
+
+.comments{
+    height: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: white;
+}
+
+.comments p{
+    color: blue;
+}
+
+/*i::before{
+  background: red;
+}*/
+/*body{
+    opacity: 0.5;
+}*/
+
+/*.bodyclass{
+  background: blue;
+  opacity: 0.5;
+}*/
