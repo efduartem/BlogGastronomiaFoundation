@@ -10,8 +10,13 @@ body{
   background: rgba(0, 0, 0, 0);
 }
 
+.header-block{
+  color: white;
+}
+
 .bodyclass{
   background: rgba(105, 24, 24, 0.77);
+  padding-left: 10px !important;
 }
 
 .vertical-divisor{
@@ -23,36 +28,84 @@ body{
   margin-right: 5px;
 }
 
-.search-button{
-  background: red !important;
+.search-button, .post-button{
+  background: #e91e63 !important;
+}
+
+.button.hollow{
+  border-color: #e91e63;
+  color: #e91e63;
 }
 
 .lateral-bar{
-  /*background: rgba(255, 255, 255, 0.5) !important;*/
+  background: #ffcdd2;
+  height: 800px;
+  padding-top: 1rem;
+  /*margin-left: 5px;*/
   /*width: 90%;*/
-  /*border-radius: 5px;*/
+  border-radius: 5px;
 }
+
+.historial h4, .historial a, .favorites, .contents h5{
+  color: #e91e63;
+}
+
 .historial-list{
   list-style: none;
 }
 
 .contents{
-  background-color: black;
-  color: white;
+  background-color: #ffcdd2;
+  color: black;
+  padding: 5%;
   /*background-color: white;*/
 }
 
+.contents hr{
+  width: 100% !important;
+}
+
 .comments{
-    height: 100px;
-    border: 1px solid black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px solid #808080;
     border-radius: 5px;
-    background: white;
+    margin-bottom: 5px;
 }
 
 .comments p{
-    color: blue;
+  color:#808080;
 }
 
+.comments img{
+    width: 100%;
+}
+
+.comments div.row{
+    height: 100%;
+}
+
+.comments-paragraphs{
+  padding-left: 0%;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width: 768px) {
+  .lateral-bar{
+    height: 250px;
+    margin-left: -0.3rem;
+    margin-bottom: 1rem;
+  }
+}
+
+ /*Medium devices (desktops, 992px and up)*/
+@media screen and (min-width: 770px) and (max-width: 992px) {
+  .lateral-bar{
+    height: 250px;
+    margin-left: -0.3rem;
+    margin-bottom: 1rem;
+  }
+}
 /*i::before{
   background: red;
 }*/

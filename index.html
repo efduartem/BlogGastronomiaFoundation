@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Blog de Gastronomia</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/foundation.min.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="css/app.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/foundation.min.css" media="screen">
+    <link rel="stylesheet" href="css/app.css" media="screen">
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" media="screen">
   </head>
   <body>
     <div class="row bodyclass">
-      <div class="column small-12 medium-12 large-4">
+      <div class="column small-12 medium-12 large-4 header-block">
         <div class="row">
           <div class="columns small-12 medium-12">
             <h3>Cocinando</h3>
@@ -26,53 +26,65 @@
       <div class="column small-12 medium-12 large-12">
         <hr>
       </div>
-      <div class="column small-12 medium-4 large-4">
+      <div class="column small-12 medium-12 large-4 lateral-bar">
         <!-- <hr> -->
-        <div class="row columns small-12">
+        <div class="columns small-12 medium-12 large-12">
           <ul class="menu">
             <li><input type="search" placeholder="Buscar"></li>
-            <li><button type="button" class="button search-button"><i class="step fi-magnifying-glass"></i></button></li>
+            <li><button type="button" class="button search-button"><i class="fi-magnifying-glass"></i></button></li>
           </ul>
         </div>
         <br>
-        <div class="row columns small-12">
+        <div class="columns small-12 medium-12 large-12">
           <div class="button-group expanded stacked">
             <a href="#" class="button hollow">Inicio</a>
             <a href="#" class="button hollow">Mi plato perfecto</a>
             <a href="#" class="button hollow">Mis recetas</a>
           </div>
         </div>
-        <div class="row columns small-12 show-for-large">
+        <div class="columns small-12 show-for-large favorites">
           <h4>Favoritos:</h4>
           <div class="large-12 columns">
             <div class="">
               <div class="row large-uncollapse">
                 <div class="large-4 small-12 medium-6 columns">
-                    <img src="img/fav1.jpg" alt="Fav 1"/>
+                  <a class="th" href="img/fav1.jpg">
+                    <img class="thumbnail" src="img/fav1.jpg" alt="Fav 1"/>
+                  </a>
                 </div>
                 <div class="large-4 small-12 medium-6 columns">
-                    <img src="img/fav2.jpg" alt="Fav 2"/>
+                    <a class="th" href="img/fav2.jpg">
+                      <img class="thumbnail" src="img/fav2.jpg" alt="Fav 2"/>
+                    </a>
                 </div>
                 <div class="large-4 small-12 medium-12 columns">
-                    <img src="img/fav3.jpg" alt="Fav 3"/>
+                    <a class="th" href="img/fav3.jpg">
+                      <img class="thumbnail" src="img/fav3.jpg" alt="Fav 3"/>
+                    </a>
                 </div>
               </div>
               <div class="row large-uncollapse">
                 <div class="large-4 small-12 medium-6 columns">
-                    <img src="img/fav4.jpg" alt="Fav 4"/>
+                    <a class="th" href="img/fav4.jpg">
+                      <img class="thumbnail" src="img/fav4.jpg" alt="Fav 4"/>
+                    </a>
                 </div>
                 <div class="large-4 small-12 medium-6 columns">
-                    <img src="img/fav5.jpg" alt="Fav 5"/>
+                    <a class="th" href="img/fav5.jpg">
+                      <img class="thumbnail" src="img/fav5.jpg" alt="Fav 5"/>
+                    </a>
                 </div>
                 <div class="large-4 small-12  medium-12 columns">
-                    <img src="img/fav6.jpg" alt="Fav 6"/>
+                    <a class="th" href="img/fav6.jpg">
+                      <img class="thumbnail" src="img/fav6.jpg" alt="Fav 6"/>
+                    </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <br>
-        <div class="row columns show-for-large">
+        <div class="columns small-12 medium-12 large-12 show-for-large historial">
           <h4>Historial:</h4>
           <ul class="historial-list">
             <li><a href="#">Ravioles de Carne Gratinados</a></li>
@@ -83,38 +95,29 @@
           </ul>
         </div>
       </div>
-      <div class="column small-12 medium-8 large-8">
+      <div class="column small-12 medium-12 large-8">
         <div class="column small-12 medium-12 large-12 card contents">
           <h3>Pasta artesanal</h3>
           <h5>6 de mayo 2017</h5>
-          <img src="img/fav1.jpg" alt="Fav 6"/>
+          <img class="thumbnail" src="img/pastas.jpg" alt="Fav 6"/>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <hr>
-          <h5>Escribe comentarios:</h5>
+          <h6>Escribe comentarios:</h6>
           <label>
             <textarea placeholder=""></textarea>
-            <button type="button" name="button" class="button float-right">Publicar</button>
+            <button type="button" name="button" class="button float-right post-button">
+              <i class="fi-pencil"></i>
+              Publicar
+            </button>
           </label>
           <div class="row">
             <div class="column small-12 medium-12 large-12 comments">
               <div class="row">
-                <div class="column small-4 medium-4 large-4">
-                  <img src="img/fav1.jpg" alt="Fav 6"/>
+                <div class="column small-3 medium-2 large-2 align-self-middle">
+                  <img src="img/mujer.png" alt="Fav 6"/>
                 </div>
-                <div class="column small-8 medium-8 large-8">
-                  <p>OK</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column small-12 medium-12 large-12 comments">
-              <div class="row">
-                <div class="column small-4 medium-4 large-4">
-                  <img src="img/fav1.jpg" alt="Fav 6"/>
-                </div>
-                <div class="column small-8 medium-8 large-8">
-                  <p>OK</p>
+                <div class="column small-9 medium-10 large-10 align-self-middle comments-paragraphs">
+                  <p><strong>Maria23:</strong> Que gran Post, aprendi mucho sobre la pasta artesanal <i class="step fi-like"></i></p>
                 </div>
               </div>
             </div>
@@ -122,48 +125,50 @@
           <div class="row">
             <div class="column small-12 medium-12 large-12 comments">
               <div class="row">
-                <div class="column small-4 medium-4 large-4">
-                  <img src="img/fav1.jpg" alt="Fav 6"/>
+                <div class="column small-3 medium-2 large-2 align-self-middle">
+                  <img src="img/hombre.png" alt="Fav 6"/>
                 </div>
-                <div class="column small-8 medium-8 large-8">
-                  <p>OK</p>
+                <div class="column small-9 medium-10 large-10 align-self-middle comments-paragraphs">
+                  <p><strong>Juan_F:</strong>Tengo una pregunta, me gustaria saber en que temperatura podemos encontrar un equilibrio al dejar la pasta en reposo <i class="step fi-like"></i></p>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <a href="#" class="button float-right"><i class="fi-pencil size" style=""></a> -->
+          <div class="row">
+            <div class="column small-12 medium-12 large-12 comments">
+              <div class="row">
+                <div class="column small-3 medium-2 large-2 align-self-middle">
+                  <img src="img/hombre.png" alt="Fav 6"/>
+                </div>
+                <div class="column small-9 medium-10 large-10 align-self-middle comments-paragraphs">
+                  <p><strong>Chef_788:</strong>Me gusto mucho la forma como describes la preparación de la pasta <i class="step fi-like"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="column small-12 medium-12 large-12 card contents">
-          <h3>Pasta artesanal</h3>
+          <h3>Los mejores Jugos naturales para adelgazar</h3>
           <h5>6 de mayo 2017</h5>
-          <img src="img/fav6.jpg" alt="Fav 6"/>
+          <img class="thumbnail" src="img/jugos_naturales.jpg" alt="Fav 6"/>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <hr>
-          <h5>Escribe comentarios:</h5>
+          <h6>Escribe comentarios:</h6>
           <label>
             <textarea placeholder=""></textarea>
-            <button type="button" name="button" class="button float-right">Publicar</button>
+            <button type="button" name="button" class="button float-right post-button">
+              <i class="fi-pencil"></i>
+              Publicar
+            </button>
           </label>
           <div class="row">
             <div class="column small-12 medium-12 large-12 comments">
               <div class="row">
-                <div class="column small-4 medium-4 large-4">
-                  <img src="img/fav1.jpg" alt="Fav 6"/>
+                <div class="column small-3 medium-2 large-2 align-self-middle">
+                  <img src="img/hombre.png" alt="Fav 6"/>
                 </div>
-                <div class="column small-8 medium-8 large-8">
-                  <p>OK</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="column small-12 medium-12 large-12 comments">
-              <div class="row">
-                <div class="column small-4 medium-4 large-4">
-                  <img src="img/fav1.jpg" alt="Fav 6"/>
-                </div>
-                <div class="column small-8 medium-8 large-8">
-                  <p>OK</p>
+                <div class="column small-9 medium-10 large-10 align-self-middle comments-paragraphs">
+                  <p><strong>PedroRss2:</strong>Lo pondre en practica! <i class="step fi-like"></i></p>
                 </div>
               </div>
             </div>
